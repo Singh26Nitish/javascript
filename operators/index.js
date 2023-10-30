@@ -1,77 +1,61 @@
-// Data types
-// A data type is a collection of data values that are grouped together, Further data types are classified into two types
+// Operators
+// Operators are used to assign values, compare, perform arithematic operators and many more. There are different types of arithematic 
+// operators in javascript. 
 
-// Premitive data type
-// The premitive data types are the predefined data types provided by avaScript language, they are also known as built-in data types.
+// Assignment operators
+// An assignment operator assign value to it's left operand based on the value on it's right operand. example
 
-// Strings
-//  The string data type in javascript represent a sequence of characters that surrounded by single or double quotes. example:
-let str = "Nitish this side";
-let strl = 'How you guys doing?';
-// Here both str and strl have data type of string
-console.log("The data type of str is " + typeof("str"));
-console.log("The data type of strl is " + typeof("strl"));
+let x = 10;
+let y = 12;
 
-// Number
-//  Number data type in javascript is used for storing both decimal values and non decimal values. example:
-let x = 100;
-let y = 23.7;
-// here x and y both have number data type. 
-console.log("the data type of x is " + typeof(x));
-console.log("the data type of y is " + typeof(y));
+// Here we assigned 10 to the x so if we check value of x it's 10.
+console.log(x);
 
-// Boolean
-// The boolean data type can accept only 2 values true or false. example:
-let bool = true;
-let bool2 = false;
+// Comparison operators
+// A comparison operaator compare it's operands and returna logicat value based on wether the comparison is true, 
+// the operanda can be strings, numerical, logic and ooject values.
 
-console.log("The data type of bool is " + typeof(bool));
-console.log("The data type of bool2 is " + typeof(bool2));
+// Equal (==) 
+// It compares wether the operands are equal 
+console.log(x == y);
 
-// Null 
-// The behaviour of null is marked as one of the premitive values cause it's behaviour is premitive, however it returns an object value. exapmle:
-let nal = null;
+// Equal (!=)
+// It compares wether the operands are not equal  
+console.log(x != y);
 
-console.log("The data type of nal is " + typeof(null));
+// Strict equal (===)
+// It compares both value and type, like if we have one string and one numerical. exaple:
+let a = 3;
+let b = "3";
 
-// Undefined 
-// This is a premitive value automatically assigned to variable that just been declared. example:
-
-let z;
-
-console.log("The value of z is "+ typeof(z));
+// here the value of both a and b are same but types are different. 
+console.log(a===b);
 
 
-// Reference data type
-// The reference data types are the data types that are derived from the premitive data types of JavaScript language. 
-// The are also known as derived data types
+// Greater than (>)	
+// It compares one operand is greater then anther or not. exapmle: 
+console.log(y > x);
 
-// Array
-// Array are the data types where we can store different type of values together like number, boolean, string, etc. example:
 
-myarr = [1,2,3,4, true, "same"];
-console.log("The value of myarr is " + typeof(myarr));
+// less than (>)
+// It compares the operand is less then other or not. example:
+console.log(z < y);
 
-// Object literals
-//  In object literals we save objects in a key value pair, so that every value has a key to access it. example:
+// Greater than or equal (>=) 
+// It compares both that operands are equal or grater then others.
 
-let marks = {
-    singh: 78,
-    shyam: 88,
-    shubam: 43,
-}
+// less than or equal (<=) 
+// It compares both that operands are equal or less then others.
 
-console.log("The value of marks is "+ typeof marks );
+// Arithmetic operators
+// An arithmetic operator takes numerical values (either literals or variables) as their operands and returns a single numerical value.
+// example: +,-,*,/
 
-// Functions
-// A functions is a block of code designed to perform aperticular taske, it is executed when someone invokes it(call it). example:
+// Bitwise operators
+// A bitwise operator treats their operands as a set of 32 bits (zeros and ones), rather than as decimal, hexadecimal, or octal numbers. 
+// example: a & b, a | b
 
-function add() {
-    console.log(a + b);
-}
+// Logical operators
+// Logical operators are typically used with Boolean (logical) values; when they are, they return a Boolean value. example
+// a && b, a || b 
 
-a = 2;
-b = 7;
-
-add(); 
-// here we are calling add function and making it add the values 
